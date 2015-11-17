@@ -6,15 +6,15 @@ import iterator.Aggregate;
 import iterator.Iterator;
 
 public class BookShelf implements Aggregate {
-	private ArrayList<Book> books;
-	public BookShelf() {
-		this.books = new ArrayList<Book>();
+	private ArrayList books;
+	public BookShelf(int initialSize) {
+		this.books = new ArrayList(initialSize);
 	}
 	public Book getBookAt(int index) {
-		return books.get(index);
+		return (Book)books.get(index);
 	}
 	public void appendBook(Book book) {
-		this.books.add(book);
+		books.add(book);
 	}
 	public int getLength() {
 		return books.size();
