@@ -1,4 +1,7 @@
-package iterator;
+package iterator.bookshelf;
+
+import iterator.Aggregate;
+import iterator.Iterator;
 
 public class BookShelf implements Aggregate {
 	private Book[] books;

@@ -1,4 +1,4 @@
-package iterator;
+package iterator.bookshelf;
 
 public class Book {
 	private String name;

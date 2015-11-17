@@ -1,4 +1,6 @@
-package iterator;
+package iterator.bookshelf;
+
+import iterator.Iterator;
 
 public class Main {
 
