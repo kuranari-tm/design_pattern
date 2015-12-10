@@ -11,6 +11,13 @@ public class Main {
 			System.out.println(result);
 		}
 		{
+			MarkdownBuilder textBuilder = new MarkdownBuilder();
+			Director director = new Director(textBuilder);
+			director.construct();
+			String result = textBuilder.getResult();
+			System.out.println(result);
+		}
+		{
 			HTMLBuilder htmlBuilder = new HTMLBuilder();
 			Director director = new Director(htmlBuilder);
 			director.construct();
